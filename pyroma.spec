@@ -4,7 +4,7 @@
 #
 Name     : pyroma
 Version  : 2.4
-Release  : 1
+Release  : 2
 URL      : https://files.pythonhosted.org/packages/1d/e4/540694eb7116c1557244f3d5c656673cea48674cb40759a78bf7bbc14c47/pyroma-2.4.tar.gz
 Source0  : https://files.pythonhosted.org/packages/1d/e4/540694eb7116c1557244f3d5c656673cea48674cb40759a78bf7bbc14c47/pyroma-2.4.tar.gz
 Summary  : Test your project's packaging friendliness
