@@ -4,7 +4,7 @@
 #
 Name     : pyroma
 Version  : 2.6
-Release  : 13
+Release  : 14
 URL      : https://files.pythonhosted.org/packages/3e/2e/6a4e59afc16a56677d6e828f32a98c953f04b62f904acf2488e16c836612/pyroma-2.6.tar.gz
 Source0  : https://files.pythonhosted.org/packages/3e/2e/6a4e59afc16a56677d6e828f32a98c953f04b62f904acf2488e16c836612/pyroma-2.6.tar.gz
 Summary  : Test your project's packaging friendliness
@@ -26,12 +26,19 @@ BuildRequires : util-linux
 BuildRequires : zope.event
 
 %description
-pyroma
 ======
-Pyroma rhymes with aroma, and is a product aimed at giving a rating of how well
-a Python project complies with the best practices of the Python packaging
-ecosystem, primarily PyPI, pip, Distribute etc, as well as a list of issues that
-could be improved.
+        
+        Pyroma rhymes with aroma, and is a product aimed at giving a rating of how well
+        a Python project complies with the best practices of the Python packaging
+        ecosystem, primarily PyPI, pip, Distribute etc, as well as a list of issues that
+        could be improved.
+        
+        The aim of this is both to help people make a project that is nice and usable,
+        but also to improve the quality of Python third-party software, making it easier
+        and more enjoyable to use the vast array of available modules for Python.
+        
+        It's written so that there are a library with methods to call from Python, as
+        well as a script, also called pyroma.
 
 %package bin
 Summary: bin components for the pyroma package.
@@ -64,6 +71,9 @@ Summary: python3 components for the pyroma package.
 Group: Default
 Requires: python3-core
 Provides: pypi(pyroma)
+Requires: pypi(docutils)
+Requires: pypi(pygments)
+Requires: pypi(setuptools)
 
 %description python3
 python3 components for the pyroma package.
@@ -78,15 +88,14 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1583209192
-# -Werror is for werrorists
+export SOURCE_DATE_EPOCH=1603401460
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
 export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FCFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FCFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
 export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=4 "
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
