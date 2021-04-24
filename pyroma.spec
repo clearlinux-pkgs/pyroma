@@ -4,7 +4,7 @@
 #
 Name     : pyroma
 Version  : 3.1
-Release  : 19
+Release  : 20
 URL      : https://files.pythonhosted.org/packages/09/1a/7a6e51467cc2013c45fdb41234421f218e4aaa53c1ae86c443ce167ed106/pyroma-3.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/09/1a/7a6e51467cc2013c45fdb41234421f218e4aaa53c1ae86c443ce167ed106/pyroma-3.1.tar.gz
 Summary  : Test your project's packaging friendliness
