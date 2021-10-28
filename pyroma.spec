@@ -4,7 +4,7 @@
 #
 Name     : pyroma
 Version  : 3.1
-Release  : 21
+Release  : 22
 URL      : https://files.pythonhosted.org/packages/09/1a/7a6e51467cc2013c45fdb41234421f218e4aaa53c1ae86c443ce167ed106/pyroma-3.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/09/1a/7a6e51467cc2013c45fdb41234421f218e4aaa53c1ae86c443ce167ed106/pyroma-3.1.tar.gz
 Summary  : Test your project's packaging friendliness
@@ -72,6 +72,7 @@ Requires: python3-core
 Provides: pypi(pyroma)
 Requires: pypi(docutils)
 Requires: pypi(pygments)
+Requires: pypi(requests)
 Requires: pypi(setuptools)
 
 %description python3
@@ -87,15 +88,15 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1615219582
+export SOURCE_DATE_EPOCH=1635458355
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
-export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FCFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
-export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=4 "
+export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=auto "
+export FCFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=auto "
+export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=auto "
+export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=auto "
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
