@@ -1,5 +1,5 @@
 PKG_NAME := pyroma
-URL = https://files.pythonhosted.org/packages/09/1a/7a6e51467cc2013c45fdb41234421f218e4aaa53c1ae86c443ce167ed106/pyroma-3.1.tar.gz
+URL = https://files.pythonhosted.org/packages/8e/55/7104613b856e5191439a902516c3d1cc05f32e03a05d2de7f1683bc88bdf/pyroma-3.2.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
