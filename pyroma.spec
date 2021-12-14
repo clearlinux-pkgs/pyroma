@@ -4,7 +4,7 @@
 #
 Name     : pyroma
 Version  : 3.2
-Release  : 23
+Release  : 24
 URL      : https://files.pythonhosted.org/packages/8e/55/7104613b856e5191439a902516c3d1cc05f32e03a05d2de7f1683bc88bdf/pyroma-3.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/8e/55/7104613b856e5191439a902516c3d1cc05f32e03a05d2de7f1683bc88bdf/pyroma-3.2.tar.gz
 Summary  : Test your project's packaging friendliness
